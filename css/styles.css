@@ -44,7 +44,8 @@ img {
 /*end reset style*/
 
 html {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
@@ -400,8 +401,8 @@ body {
 }
 
 .portfolio-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -468,7 +469,6 @@ body {
   text-align: left;
   color: var(--slate-text);
 }
-
 
 .footer {
   color: var(--navy-text);
@@ -545,4 +545,66 @@ body {
 
 .footer .footer-social-list {
   gap: 16px;
+}
+
+/* Subscribe form */
+
+.subscribe-form {
+  width: 4563px;
+  height: 80px;
+  padding-left: 80px;
+}
+
+.subscribe-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: var(--white-text);
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  padding: 8px 24px 8px 24px;
+  gap: 16px;
+  border-radius: 4px;
+  min-width: 165px;
+  height: 40px;
+  background-color: var(--iris-text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white-text);
+  cursor: pointer;
+}
+
+.footer-icon {
+  fill: var(--white-text);
+  margin-left: 16px;
 }
