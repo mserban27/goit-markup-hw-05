@@ -611,7 +611,8 @@ body {
   left: 0;
   z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window {
@@ -647,14 +648,11 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal-window:hover {
+.close-modal-window:hover,
+.close-modal-window:focus  {
   background-color: #404bbf;
   border: none;
-}
-
-.close-modal-window:focus {
-  background-color: #404bbf;
-  border: none;
+  fill: #ffffff
 }
 
 .close-icon-svg {
@@ -671,7 +669,7 @@ body {
   margin-bottom: 16px;
 }
 
-.modal-form {
+.modal-form-container {
   margin-bottom: 8px;
 }
 
@@ -736,7 +734,7 @@ body {
 }
 
 .comment-section:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
 }
 
 .privacy-container {
@@ -755,7 +753,9 @@ body {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -764,7 +764,8 @@ body {
 
 .privacy-checkbox:checked + .privacy-label .privacy-span {
   background-color: #404bbf;
-  fill: #F4F4FD;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .privacy-link {
@@ -780,9 +781,9 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color:var(--white-text);
-  cursor:pointer;
-  background-color: #4D5AE5;
-  border:none;
+  color: var(--white-text);
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
