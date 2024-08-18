@@ -523,7 +523,7 @@
           Leave your contacts and we will call you back
         </p>
 
-        <form action="./index.html">
+        <form class="modal-form" action="./index.html">
           <div class="modal-form-container">
             <label for="user-name" class="modal-form-label">Name</label>
             <div class="modal-icon">
@@ -574,13 +574,14 @@
               </svg>
             </div>
           </div>
+
           <div class="comment-container">
-            <label for="comment" class="modal-form-label">Comment</label>
+            <label for="user-comment" class="modal-form-label">Comment</label>
             <textarea
               class="comment-section"
               placeholder="Text input"
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
             ></textarea>
           </div>
 
@@ -592,7 +593,6 @@
               name="user-privacy"
               id="user-privacy"
             />
-
             <label class="privacy-label" for="user-privacy">
               <span class="privacy-span">
                 <svg class="checkbox-svg" width="10" height="8">
