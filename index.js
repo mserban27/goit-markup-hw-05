@@ -1,10 +1,10 @@
-const button = document.querySelector(".btn-modal");
+const button = document.querySelector(".primary-button");
 const backdrop = document.querySelector(".modal-backdrop");
 
 button.addEventListener("click", toggleModal);
 
 backdrop.addEventListener("click", (e) => {
-  const target = e.target.closest(".btn-close-modal");
+  const target = e.target.closest(".close-modal-window");
 
   if (!target) {
     return;
